@@ -1,2 +1,5 @@
-print("This is an example for refreshing on github use.")
-print("Making another change.")
+name = input("Enter your code name: ")
+print("Agent Name", name.strip().upper())
+print("Characters: ",len(name.strip()))
+print("Letters Only: ", name.replace(" ","a").isalpha())
+print("First A location: ", name.lower().find("a"))

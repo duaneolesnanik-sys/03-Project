@@ -1,0 +1,8 @@
+password = input("Enter the robot password: ").strip()
+print("Cleaned Password: ", password)
+print("Length: ", len(password))
+print("Only Digits: ", password.replace(" ","1").isdigit())
+print("Only Letters: ", password.replace(" ","a").isalpha())
+print("Number of 7s: ", password.count("7"))
+print("Last 7 location: ",password.rfind("7"))
+print("Access granted" if password == "ROBOT7" else "Access Denied")
